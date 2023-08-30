@@ -18,6 +18,7 @@ body{
     align-items: center;
     z-index: 232322;
     top: 0px;
+    left: 0px;
   }
   
   .logo {
@@ -361,7 +362,6 @@ button {
     display: inline-flex;
     position: relative;
     flex-direction: row;
-    height: 200px;
     width: 100%;
     margin-top: 20px;
     background-color: #000000;
@@ -383,6 +383,7 @@ button {
  }
  span{
     color: rgb(7, 212, 212);
+
  }
 
   /*search input*/
@@ -433,6 +434,7 @@ button {
     h2{
         color: white;
         font-size: 15px;
+        margin-left: 5px;
     }
     h3{
         position: relative;
@@ -461,15 +463,16 @@ button {
         position: relative;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 5px;
     }
     .news{
-        width: 100px;
+        width: 113px;
         display: flex;
         flex-direction: column ;
-        margin-right: 15px;
+        margin-right: 6px;
     }
     .news-image{
-        width: 100px;
+        width: 113px;
         background-color: #000000;
     }
     .news-details{
@@ -567,6 +570,18 @@ button {
        button:hover .button-text {
         color: #000000;
        }
+       .slider-news-div{
+        display: inline-flex;
+        position:relative;
+        flex-direction: row;
+        margin-top: 34px;
+        
+    }
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+       
  }
   
     
