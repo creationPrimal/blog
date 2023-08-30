@@ -390,8 +390,8 @@ button {
   /* Media query for showing the search input */
  @media screen and (max-width: 780px){
     .logo {
-        font-size: 20px;
-        padding-left: 10px;
+        font-size: 11px;
+        padding-left: 6px;
         color: rgb(7, 212, 212);
       }
       .nav-links{
@@ -402,11 +402,12 @@ button {
       .nav-links ul {
         list-style: none;
         display: flex;
-        font-size: 18px;
+        font-size: 11px;
+        margin-right: 9px;
       }
       
       .nav-links li {
-        margin-right: 17px;
+        margin-right: 6px;
       }
       
       .nav-links a {
@@ -427,11 +428,11 @@ button {
       
       p{
         color: white;
-        font-weight: 100;
-        letter-spacing: 0.04em;
+        font-size: 10px;
     }
     h2{
         color: white;
+        font-size: 15px;
     }
     h3{
         position: relative;
@@ -442,11 +443,130 @@ button {
         font-weight: 200;
     }
     .testimony{
-        font-size: 13px;
+        font-size: 8px;
+        margin-left: 2px;
     }
     .contacts{
-        font-size: 13px;
+        font-size: 8px;
+        margin-left: 7px;
     }
+    .main-news{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .news-div{
+        display: inline-flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .news{
+        width: 100px;
+        display: flex;
+        flex-direction: column ;
+        margin-right: 15px;
+    }
+    .news-image{
+        width: 100px;
+        background-color: #000000;
+    }
+    .news-details{
+        width: 100%;
+        
+    }
+    /*read more button*/
+    
+    button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+        font-family: inherit;
+        margin-bottom: 20px;
+        font-size: 10px;
+       }
+       
+       button.learn-more {
+        width: 100px;
+        height: 20px;
+       }
+       
+       button.learn-more .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 1.6em;
+        height: 15px;
+        background: hwb(52 76% 7%);
+        border-radius: 1.625rem;
+       }
+       
+       button.learn-more .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #ffffff;
+       }
+       
+       button.learn-more .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.625rem;
+        width: 0.005rem;
+        height: 0.000rem;
+        background: none;
+       }
+       
+       button.learn-more .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0625rem;
+        width: 0.325rem;
+        height: 0.325rem;
+        border-top: 0.125rem solid #000000;
+        border-right: 0.125rem solid #000000;
+        transform: rotate(45deg);
+       }
+       
+       button.learn-more .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.4rem 0;
+        margin: 0 0 0 1rem;
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+        line-height: 0.5;
+        text-align: center;
+        
+       }
+       
+       button:hover .circle {
+        width: 100%;
+       }
+       
+       button:hover .circle .icon.arrow {
+        background: #000000;
+        transform: translate(1rem, 0);
+       }
+       
+       button:hover .button-text {
+        color: #000000;
+       }
  }
   
     
