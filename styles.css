@@ -300,7 +300,7 @@ a:hover{
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px;
+    height: 400px;
 }
 .details{
     display: inline-flex;
@@ -338,12 +338,12 @@ a:hover{
 }
 .image{
     display: inline-flex;
-    height: 500px;
+    height: 400px;
     margin-left: 20px;
     
 }
 .image-img{
-    height: 500px;
+    height: 400px;
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
