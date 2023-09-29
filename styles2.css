@@ -46,6 +46,9 @@
         width: 180px;
         margin: 5px;
     }
+     .box h3{
+        font-size: 15px;
+    }
     .car-box{
         display: inline-flex;
         flex-direction: column;
