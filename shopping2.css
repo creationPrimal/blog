@@ -129,6 +129,9 @@
         flex-direction: column;
         margin: 20px 10px 10px 10px;
     }
+    .categories h3{
+        font-size: 13px;
+    }
     .productshead{
         display: flex;
         position: relative;
@@ -136,6 +139,9 @@
         margin: 20px 10px 5px 10px;
         justify-content: space-between;
         align-items: center;
+    }
+    .productshead h3{
+        font-size: 13px;
     }
     .productsdiv{
         display: flex;
@@ -207,7 +213,7 @@
     }
     .list h4{
         margin: 0px 0px 10px 0px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .social{
         display: flex;

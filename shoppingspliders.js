@@ -11,6 +11,7 @@ const firstsplide = new Splide( '#first-splide', {
   type: 'loop',
   pagination: false,
   autoplay: true,
+  arrows: false,
   breakpoints: {
     1190: {
       perPage: 9,
@@ -43,9 +44,15 @@ const firstsplide = new Splide( '#first-splide', {
       perPage: 5,
       padding: { left: 0, right: 0 },
     },
-  450: {
-  perPage: 3,
-  },
+    450: {
+    perPage: 4,
+    padding: { left: 0, right: 20 },
+    
+    },
+    360: {
+      perPage: 3,
+      
+      },
   },
   } );
   firstsplide.mount()
@@ -336,6 +343,7 @@ const shoppingmainad = new Splide( '#shopping-main-ad', {
   snap: true,
   type: 'fade',
   rewind: true,
+  arrows: false,
   interval: 10000,
   pagination: false,
   autoplay: true,
