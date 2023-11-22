@@ -126,14 +126,13 @@ nav a:hover{
 .searchdiv{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin: 10px 15px 10px 0px;
+    justify-content: space-between;
+    margin: 10px 0px 10px 30px;
     align-items: center;
-    width: 100%;
     height: 40px;
 }
 .nav-menu{
-    display: none;
+    display: flex;
     margin-top: 2px;
 }
 .mobile-nav-head{
@@ -184,6 +183,159 @@ nav a:hover{
     margin-right: 10px;
     cursor: pointer;
 }
+/*menu div*/
+.menu{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.281);
+    z-index: 1002;
+}
+.menudiv{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 5px 5px 5px 35px;
+    max-width: 300px;
+    height: 100%;
+    top: 40px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+    transform: translateX(-100%);
+    transition: all 300ms;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.menu-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 25px 10px 0px;
+}
+.menu-title p{
+    display: flex;
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    font-size: 14px;
+    padding: 7px 0px 7px 5px;
+    border-radius: 6px;
+}
+.menu-title:hover p{
+    display: flex;
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    padding: 7px 0px 7px 5px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgba(255, 68, 0, 0.747);
+    transition: 200ms;
+}
+.menu-about-areno p{
+    margin: 5px 10px 4px 0px;
+    font-size: 13px;
+}
+.menu-about-areno p:hover{
+    margin: 5px 10px 4px 0px;
+    color: orangered;
+}
+.menu-title-icon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    max-width: 30px;
+    min-width: 30px;
+    background-color: black;
+    margin: 0px 10px 0px 0px;
+}
+.menu-follow-us {
+    display: none;
+}
+.menu-follow-us h5{
+    margin: 10px 10px 0px 0px;
+}
+.menu-socials{
+    display: flex;
+    flex-direction: row;
+}
+.register{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 10px 10px 10px 0px;
+}
+.register p{
+    font-size: 13px;
+    margin: 9px 0px 0px 0px;
+    color: rgb(0, 0, 0);
+}
+.register p:hover{
+    margin: 9px 0px 0px 0px;
+    color: orangered;
+    cursor: pointer;
+}
+.register button{
+    width: auto;
+    padding: 3px 22px 3px 22px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: orangered;
+    color: white;
+}
+.register button:hover{
+    width: auto;
+    padding: 3px 22px 3px 22px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(255, 68, 0, 0);
+    color: rgb(0, 0, 0);
+    transition: 300ms;
+    cursor: pointer;
+}
+.menu-trademark p{
+    font-size: 10px;
+    max-width: 140px;
+}
+.minimize-menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 5px;
+    border: none;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+.minimize-menu:hover{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 5px;
+    border: none;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 68, 0, 0.726);
+    cursor: pointer;
+}
+.below-menu{
+    margin-top: 80px;
+}
+
+
 /*ad slider*/
 
 .adslider {
@@ -542,9 +694,9 @@ nav a:hover{
 .backtotop{
     display: flex;
     position: absolute;
-    background-color: orange;
-    padding: 2px;
     right: 0px;
+    font-size: 10px;
+    color: white;
     margin-right: 10px;
 }
 
