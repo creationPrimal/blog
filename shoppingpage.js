@@ -8,6 +8,7 @@ const menudiv = document.querySelector('.menudiv');
 
 menu.addEventListener("click", () => {
     menudiv.style.transform = 'translateX(0%)'
+    minimizediv.style.transform = 'translateX(0%)'
     minimizediv.style.width = '100%'
 })
 minimize.addEventListener("click", () => {
