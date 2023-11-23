@@ -121,6 +121,7 @@ nav a:hover{
     width: 30px;
     margin-right: 20px;
     border-radius: 50%;
+    overflow: hidden;
     background-color: green;
 }
 .searchdiv{
@@ -178,8 +179,9 @@ nav a:hover{
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
+    border: none;
     background-color: rgba(0, 0, 0, 0);
     margin-right: 10px;
     cursor: pointer;
@@ -192,10 +194,10 @@ nav a:hover{
     display: flex;
     position: fixed;
     flex-direction: row;
-    width: auto;
+    width: 0px;
     height: 100%;
     top: 0px;
-    background-color: rgba(0, 0, 0, 0.281);
+    background-color: rgba(0, 0, 0, 0);
     z-index: 102;
 }
 .menudiv{
@@ -207,20 +209,35 @@ nav a:hover{
     height: 100%;
     top: 40px;
     overflow: hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     z-index: 20;
     transform: translateX(-100%);
     transition: all 300ms;
-    cursor: pointer;
     z-index: 1003;
 }
-
+.darkside{
+    display: flex;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.menu-logo{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    height: 35px;
+    width: auto;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0);
+  }
 .menu-title{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     margin: 0px 25px 10px 0px;
+}
+.main-menu-content{
+    margin-right: 15px;
 }
 .menu-title p{
     display: flex;
@@ -267,6 +284,80 @@ nav a:hover{
     height: 100%;
     object-fit: cover;
 }
+.theme{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    width: auto;
+    margin: 10px 0px 10px 0px;
+}
+.theme p{
+    margin: 0px 20px 0px 0px;
+}
+.toggle-switch {
+    position: relative;
+    margin-bottom: 3px;
+    width: 40px;
+    height: 20px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+  
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1.5px solid var(--dark);
+  }
+  
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 .menu-follow-us {
     display: none;
 }
@@ -325,7 +416,7 @@ nav a:hover{
     top: 5px;
     height: 20px;
     width: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.336);
     cursor: pointer;
 }
 .minimize-menu img{
@@ -464,6 +555,7 @@ nav a:hover{
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0);
 }
+
 .seemorearrow:hover{
     display: flex;
     position: relative;
@@ -646,7 +738,7 @@ nav a:hover{
     display: flex;
     color: white;
     flex-direction: column;
-    max-width: 24%;
+    max-width: 30%;
 }
 .quote p{
     margin: 4px 0px 0px 0px;
@@ -655,7 +747,7 @@ nav a:hover{
     display: flex;
     color: white;
     flex-direction: column;
-    max-width: 24%;
+    max-width: 30%;
 }
 .list h4{
     margin: 0px 0px 10px 0px;
@@ -709,5 +801,175 @@ nav a:hover{
 .mobile-nav{
     display: none;
 }
+
+
+
+/*filter menu*/
+.filtermenu{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+}
+.filtermenudiv{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 5px 5px 5px 10px;
+    max-width: 250px;
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    padding-top: 40px;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+    transform: translateX(100%);
+    transition: all 300ms;
+    z-index: 1003;
+}
+.filterdarkside{
+    display: flex;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.filtermenudiv::-webkit-scrollbar {
+    width: 5px; /* Adjust the width of the scrollbar */
+    height: 5px; /* Adjust the height of the scrollbar */
+  }
+  
+  /* For Firefox */
+  .filtermenudiv {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+  }
+  
+  /* For Internet Explorer/Edge */
+  .filtermenudiv{
+    -ms-overflow-style: scrollbar;
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+  }
+.filtercontents p{
+    margin: 15px 0px 4px 0px;
+}
+.filterbuttons{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.filterbutton{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+.filterbuttons button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.226);
+}
+.filterbuttons button:hover{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    background-color: rgba(128, 128, 128, 0);
+    transition: 200ms;
+    cursor: pointer;
+}
+.filterbutton button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 28px;
+    margin: 15px 0px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.226);
+}
+.filterbutton button:hover{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    background-color: rgba(128, 128, 128, 0);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.filterbuttons input{
+    width: 100%;
+    height: 28px;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.226);
+}
+.filtersearch{
+    width: 20% !important;
+}
+.filtercategories{
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+    background-color: rgba(158, 3, 3, 0);
+    transition: all 300ms;
+}
+.filtercategories button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 28px;
+    margin: 0px 0px 5px 0px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+.filtercategories button:hover{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 28px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    background-color: rgba(128, 128, 128, 0);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
 

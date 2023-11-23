@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="shopping.css">
     <link rel="stylesheet" href="shopping2.css">
     <link rel="stylesheet" href="splide.css">
+    <link rel="stylesheet" href="darkmode.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
@@ -119,9 +120,12 @@
                         <img src="icons/Close_square.png" alt="">
                     </button>
                     <div class="main-menu-content">
+                        <a href=""><div class="menu-logo">
+                            <img src="icons/Frame 304 (2).png" alt="">
+                        </div></a>
                         <a href=""><div class="menu-title">
                             <div class="menu-title-icon">
-                                <img src="icons/Home_fill (1).png" alt="">
+                                <img src="icons/Home_fill.png" alt="">
                             </div>
                             <p>Home</p>
                         </div></a>
@@ -145,7 +149,7 @@
                         </div></a>
                         <a href=""><div class="menu-title">
                             <div class="menu-title-icon">
-                                <img src="icons/Message_duotone_line.png" alt="">
+                                <img src="icons/Message_alt_duotone_line.png" alt="">
                             </div>
                             <p>Contact Areno</p>
                         </div></a>
@@ -156,6 +160,15 @@
                         <a href=""><p>Privacy Policy</p></a>
                         <a href=""><p>Refund Policy</p></a>
                         <a href=""><p>Advertise With Us</p></a>
+                    </div>
+                    <div class="theme">
+                        <p><b>Change Theme</b></p>
+                        <div class="toggle-switch" >
+                            <label class="switch-label">
+                              <input type="checkbox" class="checkbox" id="darkmode">
+                              <span class="slider" ></span>
+                            </label>
+                          </div> 
                     </div>
                     <div class="menu-follow-us">
                         <h5>Follow Us</h5>
@@ -191,6 +204,65 @@
                 </div>
                
             </div>
+            <div class="darkside"></div>
+        </div>
+        <!--filter menu-->
+        <div class="filtermenu">
+            <div class="filtermenudiv">
+                <div class="filtercontents">
+                    <p><b>Price</b></p>
+                    <div class="filterbuttons">
+                        <button>Low To High</button>
+                        <button>High To Low</button>
+                    </div>
+                    <p><b>New Arrivals</b></p>
+                    <div class="filterbuttons">
+                        <button>Products</button>
+                        <button>Stores</button>
+                    </div>
+                    <div class="filterbutton">
+                        <button>Random Picks</button>
+                    </div>
+                    <div class="filterbutton">
+                        <button id="filtercategory">Categories</button>
+                    </div>
+                    <!--filter categories-->
+                    <div class="filtercategories">
+                        <button>Kitchen</button>
+                        <button>General Supplies</button>
+                        <button>Fruits</button>
+                        <button>Hard Ware</button>
+                        <button>Medicine</button>
+                        <button>Automobiles</button>
+                        <button>Furniture</button>
+                        <button>Art & Decor</button>
+                    </div>
+                    <!--end filter categories-->
+                    <div class="filterbuttons" style="margin-top: 15px;">
+                        <button>Newest</button>
+                        <button>Oldest</button>
+                    </div>
+                    <p><b>a</b> to <b>z</b></p>
+                    <div class="filterbuttons">
+                        <button>Stores</button>
+                        <button>Brands</button>
+                    </div>
+                    <p><b>Region & Location</b></p>
+                    <form action="">
+                        <div class="filterbuttons">
+                            <input type="search" placeholder="Input Location..">
+                            <button class="filtersearch" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.5 17.5L13.875 13.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="filterdarkside"></div>
         </div>
         
         <!--ad section-->
@@ -360,7 +432,7 @@
                                      <div class="splide__slide">
                                         <div class="product">
                                             <div class="productimage">
-                                                <img src="photos/The Gracefully Glam Blog _ Beauty.jpg" alt="">
+                                                <img src="photos/5a3abcb9296d36 1.png" alt="">
                                             </div>
                                             <div class="details">
                                                 <h4>Fresh Carot</h4>
@@ -393,7 +465,7 @@
                                      <div class="splide__slide">
                                         <div class="product">
                                             <div class="productimage">
-                                                <img src="photos/Iphone 13 pro.jpg" alt="">
+                                                <img src="photos/Fried Sushi Roll.jpg" alt="">
                                             </div>
                                             <div class="details">
                                                 <h4>Fresh Carot</h4>
@@ -426,7 +498,7 @@
                                      <div class="splide__slide">
                                         <div class="product">
                                             <div class="productimage">
-                                                <img src="photos/15 Tips To Get The Best From Financial Aid For College - Society19.jpg" alt="">
+                                                <img src="photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt="">
                                             </div>
                                             <div class="details">
                                                 <h4>Fresh Carot</h4>
@@ -1270,16 +1342,6 @@
                     </div>
                 </div>
                 <div class="list">
-                    <a href=""><h4>ARENO</h4></a>
-                    <ul>
-                        <a href=""><li>Shopping</li></a>
-                        <a href=""><li>Restaurant</li></a>
-                        <a href=""><li>Booking</li></a>
-                        <a href=""><li>Register</li></a>
-                        <a href=""><li>Categories</li></a>
-                    </ul>
-                </div>
-                <div class="list">
                     <a href=""><h4>SUPPORT</h4></a>
                     <ul>
                         <li><a href="">Contact Us</li></a>
@@ -1310,13 +1372,13 @@
         <div class="mobile-nav">
             <a href=""><div class="mobile-nav-div">
                 <div class="mobile-nav-icon selected">
-                    <img src="icons/Frame 304.png" alt="">
+                    <img src="icons/Home_fill (1).png" alt="">
                 </div>
                 <p>Shopping</p>
             </div></a>
             <a href=""><div class="mobile-nav-div">
                 <div class="mobile-nav-icon">
-                   <img src="icons/Shop_duotone (1).png" alt="">
+                   <img src="icons/Shop_duotone.png" alt="">
                 </div>
                 <p>Stores</p>
             </div></a>

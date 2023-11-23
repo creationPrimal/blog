@@ -130,7 +130,7 @@
         margin: 20px 10px 10px 10px;
     }
     .categories h3{
-        font-size: 13px;
+        font-size: 14px;
     }
     .productshead{
         display: flex;
@@ -141,7 +141,7 @@
         align-items: center;
     }
     .productshead h3{
-        font-size: 13px;
+        font-size: 14px;
     }
     .productsdiv{
         display: flex;
@@ -264,6 +264,19 @@
         -ms-overflow-style: scrollbar;
         scrollbar-width: thin; /* Makes the scrollbar thinner */
       }
+      .menu-logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 35px;
+        width: auto;
+        margin-right: 20px;
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .menu-logo img{
+        height: 100%;
+        width: auto;
+      }
     .menu-title{
         display: flex;
         flex-direction: row;
@@ -292,6 +305,7 @@
     }
     .menu-about-areno p{
         margin: 5px 10px 4px 0px;
+       
     }
     .menu-about-areno p:hover{
         margin: 5px 10px 4px 0px;
@@ -371,7 +385,7 @@
         top: 15px;
         height: 15px;
         width: 15px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.336);
         cursor: pointer;
     }
     
@@ -391,8 +405,25 @@
         margin: 0px;
         color: orangered;
     }
-
+    .filtermenudiv{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        padding: 5px 5px 5px 10px;
+        max-width: 250px;
+        width: 250px;
+        height: 100%;
+        top: 0px;
+        overflow-y: scroll;
+        background-color: rgb(255, 255, 255);
+        z-index: 20;
+        transform: translateX(100%);
+        transition: all 300ms;
+        z-index: 4003;
     }
+    
+
+}
 
 
 
@@ -548,6 +579,22 @@
     .mobile-headings{
         display: none;
     }
+    .filtermenudiv{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        padding: 5px 5px 5px 10px;
+        max-width: 250px;
+        width: 230px;
+        height: 100%;
+        top: 0px;
+        overflow-y: scroll;
+        background-color: rgb(255, 255, 255);
+        z-index: 20;
+        transform: translateX(100%);
+        transition: all 300ms;
+        z-index: 4003;
+    }
 }
 
 
@@ -655,4 +702,5 @@
         cursor: pointer;
         z-index: 1002;
     }
+   
 }
