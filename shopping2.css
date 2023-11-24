@@ -84,7 +84,7 @@
     .adslider {
         position: relative;
         width: auto; /* Set your maximum width */
-        margin: 20px 10px 0px 10px;
+        margin: 0px 10px 0px 10px;
         border-radius: 6px;
         overflow: hidden;
         background-color: grey;
@@ -224,7 +224,10 @@
         align-items: center;
         height: 16px;
         width: 16px;
-        margin-right: 10px;
+        border: none;
+        background-color: rgba(255, 217, 0, 0);
+        margin: 10px 12px 0px 0px;
+        cursor: pointer;
     }
     /*menu div*/
     .menu{
@@ -306,11 +309,12 @@
         border-radius: 3px;
     }
     .menu-about-areno p{
-        margin: 5px 10px 4px 0px;
+        margin: 5px 10px 0px 0px;
        
     }
     .menu-about-areno p:hover{
-        margin: 5px 10px 4px 0px;
+        margin: 5px 10px 0px 5px;
+        transition: 200ms;
         color: orangered;
     }
     .menu-title-icon{
@@ -346,16 +350,8 @@
         flex-direction: column;
         margin: 10px 10px 10px 0px;
     }
-    .register p{
-        margin: 9px 0px 0px 0px;
-        color: rgb(0, 0, 0);
-    }
-    .register p:hover{
-        margin: 9px 0px 0px 0px;
-        color: orangered;
-        cursor: pointer;
-    }
-    .register button{
+    
+    .register-button1{
         width: auto;
         padding: 3px 22px 3px 22px;
         border-radius: 10px;
@@ -363,13 +359,32 @@
         background-color: orangered;
         color: white;
     }
-    .register button:hover{
+    .register-button1:hover{
         width: auto;
         padding: 3px 22px 3px 22px;
         border-radius: 10px;
         border: 1px solid rgb(0, 0, 0);
         background-color: rgba(255, 68, 0, 0);
         color: rgb(0, 0, 0);
+        transition: 300ms;
+        cursor: pointer;
+    }
+    .register-button2{
+        width: auto;
+        padding: 3px 28px 3px 28px;
+        margin: 5px 0px 0px 0px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.685);
+        background-color: rgba(255, 68, 0, 0);
+        color: black;
+    }
+    .register-button2:hover{
+        width: auto;
+        padding: 3px 28px 3px 28px;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgba(255, 68, 0, 0);
+        color: orangered;
         transition: 300ms;
         cursor: pointer;
     }
@@ -401,7 +416,15 @@
         justify-content: space-around;
     }
     .mobile-headings p{
+        font-size: 15px;
+        font-weight: 550;
         margin: 0px;
+    }
+    .mobile-headings button{
+        padding: 0px;
+        border: none;
+        background-color: rgba(0, 255, 255, 0);
+        cursor: pointer;
     }
     .mobile-headings p:hover{
         margin: 0px;
@@ -450,7 +473,7 @@
     .adslider {
         position: relative;
         width: auto; /* Set your maximum width */
-        margin: 20px 10px 0px 10px;
+        margin: 0px 10px 0px 10px;
         border-radius: 6px;
         overflow: hidden;
         background-color: grey;
@@ -504,14 +527,7 @@
         overflow: hidden;
         max-width: 180px;
     }
-    .social{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 14px;
-        width: 14px;
-        margin-right: 7px;
-    }
+    
     /*mobile nav*/
     .mobile-nav{
         display: flex;
@@ -532,8 +548,9 @@
         align-items: center;
         justify-content: center;
         height: 36px;
-        width: 36px;
+        min-width: 36px;
         overflow: hidden;
+        border: none;
         background-color: rgba(0, 0, 0, 0);
     }
     .mobile-nav-icon img{
@@ -660,7 +677,7 @@
     .adslider {
         position: relative;
         width: auto; /* Set your maximum width */
-        margin: 20px 10px 0px 10px;
+        margin: 0px 10px 0px 10px;
         border-radius: 6px;
         overflow: hidden;
         background-color: grey;
@@ -683,7 +700,7 @@
     .adslider2{
         position: relative;
         width: auto; /* Set your maximum width */
-        margin: 20px 35px 10px 35px;
+        margin: 0px 35px 10px 35px;
         border-radius: 0px;
         overflow: hidden;
         background-color: grey;

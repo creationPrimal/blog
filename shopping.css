@@ -138,6 +138,8 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     height: 40px;
+    border: none;
+    background-color: #28292c00;
     min-width: 40px;
     cursor: pointer;
 }
@@ -258,6 +260,13 @@ nav a:hover{
     padding: 7px 0px 7px 5px;
     border-radius: 3px;
 }
+.menu-title button{
+    width: 100%;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    background-color: #28292c00;
+}
 .title-selected p{
     display: flex;
     position: relative;
@@ -283,13 +292,26 @@ nav a:hover{
     background-color: rgba(255, 68, 0, 0.747);
     transition: 200ms;
 }
-
+.menu-about-areno{
+    display: flex;
+    flex-direction: column;
+}
 .menu-about-areno p{
-    margin: 5px 10px 4px 0px;
+    margin: 5px 10px 0px 0px;
     font-size: 13px;
 }
+.menu-about-areno a{
+    width: fit-content;
+}
+.menu-about-areno button{
+    padding: 0px;
+    background-color: #28292c00;
+    border: none;
+    cursor: pointer;
+}
 .menu-about-areno p:hover{
-    margin: 5px 10px 4px 0px;
+    margin: 5px 10px 0px 5px;
+    transition: 200ms;
     color: orangered;
 }
 .menu-title-icon{
@@ -401,19 +423,11 @@ nav a:hover{
     display: flex;
     position: relative;
     flex-direction: column;
+    width: 50%;
     margin: 10px 10px 10px 0px;
 }
-.register p{
-    font-size: 13px;
-    margin: 9px 0px 0px 0px;
-    color: rgb(0, 0, 0);
-}
-.register p:hover{
-    margin: 9px 0px 0px 0px;
-    color: orangered;
-    cursor: pointer;
-}
-.register button{
+
+.register-button1{
     width: auto;
     padding: 3px 22px 3px 22px;
     border-radius: 10px;
@@ -421,13 +435,32 @@ nav a:hover{
     background-color: orangered;
     color: white;
 }
-.register button:hover{
+.register-button1:hover{
     width: auto;
     padding: 3px 22px 3px 22px;
     border-radius: 10px;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgba(255, 68, 0, 0);
     color: rgb(0, 0, 0);
+    transition: 300ms;
+    cursor: pointer;
+}
+.register-button2{
+    width: auto;
+    padding: 3px 28px 3px 28px;
+    margin: 5px 0px 0px 0px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.685);
+    background-color: rgba(255, 68, 0, 0);
+    color: black;
+}
+.register-button2:hover{
+    width: auto;
+    padding: 3px 28px 3px 28px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(255, 68, 0, 0);
+    color: orangered;
     transition: 300ms;
     cursor: pointer;
 }
@@ -463,7 +496,7 @@ nav a:hover{
 .adslider {
     position: relative;
     width: auto; /* Set your maximum width */
-    margin: 20px 35px 0px 35px;
+    margin: 0px 35px 0px 35px;
     border-radius: 6px;
     overflow: hidden;
     background-color: grey;
@@ -524,6 +557,8 @@ nav a:hover{
     justify-content: center;
     text-align: center;
     width: 100px;
+    border: none;
+    background-color: #28292c00;
     margin-right: 10px;
 
 }
@@ -572,6 +607,16 @@ nav a:hover{
 }
 .seemore h3{
     color: orangered;
+    font-weight: bold;
+}
+.seemore h3:hover{
+    color: orangered;
+    font-weight: bold;
+}
+.seemore button{
+    border: none;
+    background-color: #28292c00;
+    cursor: pointer;
 }
 .seemorearrow{
     display: flex;
@@ -780,6 +825,24 @@ nav a:hover{
     flex-direction: column;
     max-width: 30%;
 }
+.list button{
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    color: white;
+    padding: 0px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+.list button:hover{
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    color: orangered;
+    padding: 0px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
 .list h4{
     margin: 0px 0px 10px 0px;
 }
@@ -799,20 +862,9 @@ nav a:hover{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    width: 20px;
-    margin: 10px 10px 0px 0px;
-}
-.social img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 .social i {
+    font-size: 18px;
     color: black;
 }
 .social i:hover{
@@ -824,9 +876,12 @@ nav a:hover{
     align-items: center;
     height: 20px;
     width: 20px;
-    margin: 10px 10px 0px 0px;
+    border: none;
+    background-color: #0040ff00;
+    margin: 10px 5px 0px 0px;
 }
 .footer-social i {
+    font-size: 20px;
     color: white;
 }
 .footer-social i:hover{
