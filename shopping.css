@@ -21,7 +21,7 @@ nav{
     width: 100%;
     color: white;
     background-color: orangered;
-    z-index: 1000;
+    z-index: 10000;
 }
 nav a:hover{
     color: white;
@@ -134,8 +134,16 @@ nav a:hover{
 }
 .nav-menu{
     display: flex;
-    margin-top: 2px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    min-width: 40px;
     cursor: pointer;
+}
+.nav-menu i{
+    font-size: 35px;
+    color: black;
 }
 .mobile-nav-head{
     display: none;
@@ -234,11 +242,13 @@ nav a:hover{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px 25px 10px 0px;
+    margin: 0px 10px 10px 0px;
 }
 .main-menu-content{
-    margin-right: 15px;
+    margin-right: 20px;
+    
 }
+
 .menu-title p{
     display: flex;
     position: relative;
@@ -246,7 +256,21 @@ nav a:hover{
     width: 100%;
     font-size: 14px;
     padding: 7px 0px 7px 5px;
-    border-radius: 6px;
+    border-radius: 3px;
+}
+.title-selected p{
+    display: flex;
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    padding: 7px 0px 7px 5px !important;
+    border-radius: 3px;
+    color: white !important;
+    background-color: rgba(255, 68, 0, 0.747)!important ;
+}
+.title-selected i{
+    font-size: 20px;
+    color: orangered !important;
 }
 .menu-title:hover p{
     display: flex;
@@ -254,11 +278,12 @@ nav a:hover{
     margin: 0px;
     width: 100%;
     padding: 7px 0px 7px 5px;
-    border-radius: 6px;
+    border-radius: 3px;
     color: white;
     background-color: rgba(255, 68, 0, 0.747);
     transition: 200ms;
 }
+
 .menu-about-areno p{
     margin: 5px 10px 4px 0px;
     font-size: 13px;
@@ -279,11 +304,15 @@ nav a:hover{
     background-color: rgba(255, 110, 110, 0);
     margin: 0px 10px 0px 0px;
 }
-.menu-title-icon img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.menu-title-icon i{
+    font-size: 20px;
+    color: black;
 }
+.menu-title-icon i:hover{
+    font-size: 20px;
+    color: orangered;
+}
+
 .theme{
     display: flex;
     flex-direction: row;
@@ -416,13 +445,13 @@ nav a:hover{
     top: 5px;
     height: 20px;
     width: 20px;
-    background-color: rgba(255, 255, 255, 0.336);
+    background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
 }
-.minimize-menu img{
-    height: 20px;
-    object-fit: cover;
+.minimize-menu i{
+    color: black;
 }
+
 
 .below-menu{
     margin-top: 80px;
@@ -569,8 +598,10 @@ nav a:hover{
     background-color: rgba(0, 0, 0, 0.151);
 }
 .seemorearrow{
-    transform: rotate(180deg);
     height: 30px;
+}
+.seemorearrow i{
+    color: black;
 }
 .productsdiv{
     display: flex;
@@ -781,6 +812,26 @@ nav a:hover{
     width: 100%;
     object-fit: cover;
 }
+.social i {
+    color: black;
+}
+.social i:hover{
+    color: orangered;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    margin: 10px 10px 0px 0px;
+}
+.footer-social i {
+    color: white;
+}
+.footer-social i:hover{
+    color: orangered;
+}
 
 .lowerfooterdetail {
     margin: 10px 0px 17px 0px;
@@ -854,6 +905,10 @@ nav a:hover{
     -ms-overflow-style: scrollbar;
     scrollbar-width: thin; /* Makes the scrollbar thinner */
   }
+
+.filtercontents{
+    margin-bottom: 70px;
+}
 .filtercontents p{
     margin: 15px 0px 4px 0px;
 }
@@ -886,8 +941,8 @@ nav a:hover{
     justify-content: center;
     width: 48%;
     height: 28px;
-    border: 1px solid rgba(0, 0, 0, 0.253);
-    background-color: rgba(128, 128, 128, 0);
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    background-color: rgba(146, 146, 146, 0);
     transition: 200ms;
     cursor: pointer;
 }
@@ -909,7 +964,7 @@ nav a:hover{
     justify-content: center;
     width: 100%;
     height: 28px;
-    border: 1px solid rgba(0, 0, 0, 0.253);
+    border: 1px solid rgba(0, 0, 0, 0.349);
     background-color: rgba(128, 128, 128, 0);
     transition: 200ms;
     cursor: pointer;
@@ -929,12 +984,19 @@ nav a:hover{
 .filtercategories{
     display: flex;
     flex-direction: column;
-    height: 0px;
+    height: auto;
     width: 100%;
     margin-top: 5px;
     overflow: hidden;
     background-color: rgba(158, 3, 3, 0);
     transition: all 300ms;
+}
+.filtercategoriesdiv{
+    display: flex;
+    flex-direction: column;
+    height: 264px;
+    width: 100%;
+    overflow: hidden;
 }
 .filtercategories button{
     display: flex;
@@ -942,11 +1004,23 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 28px;
+    min-height: 28px;
     margin: 0px 0px 5px 0px;
     border: 1px solid rgba(0, 0, 0, 0);
     color: white;
     background-color: rgba(0, 0, 0, 0.589);
+}
+.filter-more-categories button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 28px;
+    margin: 0px 0px 5px 0px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
 .filtercategories button:hover{
     display: flex;

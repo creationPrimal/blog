@@ -7,7 +7,7 @@
     
     }
     p{
-        font-size: 13px;
+        font-size: 14px;
     }
     
     nav{
@@ -268,21 +268,23 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        height: 35px;
+        min-height: 30px;
+        height: 30px;
         width: auto;
         margin-right: 20px;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(255, 255, 255, 0);
       }
       .menu-logo img{
         height: 100%;
         width: auto;
       }
+   
     .menu-title{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        margin: 10px 15px 10px 0px;
+        margin: 10px 2px 10px 0px;
     }
     .menu-title:hover p{
         display: flex;
@@ -290,7 +292,7 @@
         margin: 0px;
         width: 100%;
         padding: 8px 0px 8px 5px;
-        border-radius: 6px;
+        border-radius: 3px;
         color: white;
         background-color: rgba(255, 68, 0, 0.733);
         transition: 200ms;
@@ -301,7 +303,7 @@
         margin: 0px;
         width: 100%;
         padding: 8px 0px 8px 5px;
-        border-radius: 6px;
+        border-radius: 3px;
     }
     .menu-about-areno p{
         margin: 5px 10px 4px 0px;
@@ -385,7 +387,7 @@
         top: 15px;
         height: 15px;
         width: 15px;
-        background-color: rgba(255, 255, 255, 0.336);
+        background-color: rgba(255, 255, 255, 0);
         cursor: pointer;
     }
     
@@ -421,6 +423,16 @@
         transition: all 300ms;
         z-index: 4003;
     }
+    .filtercategoriesdiv{
+        display: flex;
+        flex-direction: column;
+        height: 264px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .filtercontents{
+        margin-bottom: 10px;
+    }
     
 
 }
@@ -431,6 +443,9 @@
 @media screen and (max-width: 600px) {
     h3{
         font-size: 17px;
+    }
+    p{
+        font-size: 13px;
     }
     .adslider {
         position: relative;
