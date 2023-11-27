@@ -7,7 +7,6 @@ const cartamount = document.querySelector('.cartamount');
       // Function to update the counter and display it in the <input> element
       function updateCounter() {
         cartamount.value = counter;
-        cartamount,value = cartcounter.innerHTML
       }
       
 
