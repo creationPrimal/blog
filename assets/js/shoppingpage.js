@@ -2,6 +2,7 @@
 
 //expanding menu bar
 const menu = document.querySelector('.nav-menu');
+const secondmenu = document.querySelector('.second-menu');
 const minimize = document.querySelector('.minimize-menu');
 const minimizediv = document.querySelector('.menu');
 const darkside = document.querySelector('.darkside');
@@ -13,6 +14,12 @@ const menudiv = document.querySelector('.menudiv');
       minimizediv.style.width = '100%'
       darkside.style.width = '100%'
   })
+  secondmenu.addEventListener("click", () => {
+    menudiv.style.transform = 'translateX(0%)'
+    minimizediv.style.transform = 'translateX(0%)'
+    minimizediv.style.width = '100%'
+    darkside.style.width = '100%'
+})
   minimize.addEventListener("click", () => {
       menudiv.style.transform = 'translateX(-100%)'
       minimizediv.style.width = '0px'
@@ -23,6 +30,7 @@ const menudiv = document.querySelector('.menudiv');
       minimizediv.style.width = '0px'
       darkside.style.width = 'auto'
   })
+  
 
 //implementing dark mode
 

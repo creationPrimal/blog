@@ -71,6 +71,10 @@ body {
     transition: 300ms;
     cursor: pointer;
 }
+.add-cart2:hover{
+    color: var(--text-color-light) !important;
+    border-color: var(--bg-color-filterbuttonborder) !important;
+}
 .register-button2{
     color: var(--text-color-light);
     border-color: var(--bg-color-filterbuttonborder);
@@ -79,7 +83,13 @@ body {
 .register-button2:hover{
     border-color: var(--bg-color-filterbuttonborder);
     transition: color 0.3s, background-color 0.3s;
+}.product-profile b{
+    color: var(--text-color-light);
 }
+.delivery-info input, textarea{
+    color: var(--text-color-light);
+}
+
 
 .social i, .minimize-menu i, .seemorearrow i {
     color: var(--text-color-light);
@@ -87,6 +97,9 @@ body {
 .nav-menu i{
     font-size: 35px;
     color: var(--text-color-light);
+}
+.return i{
+    color: var(--text-color-light) !important;
 }
   
 

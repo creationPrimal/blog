@@ -83,15 +83,7 @@
     background-color: orangered;
     padding: 2px 10px 2px 10px;
 }
-.loadmorediv button:hover{
-    border: 1px solid rgba(0, 0, 0, 0.479);
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 68, 0, 0);
-    transition: 200ms;
-    padding: 2px 10px 2px 10px;
-    cursor: pointer;
-}
+
 
 
 
