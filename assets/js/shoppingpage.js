@@ -25,12 +25,6 @@ const menudiv = document.querySelector('.menudiv');
       minimizediv.style.width = '0px'
       darkside.style.width = 'auto'
   })
-  secondmenu.addEventListener("click", () => {
-    menudiv.style.transform = 'translateX(0%)'
-    minimizediv.style.transform = 'translateX(0%)'
-    minimizediv.style.width = '100%'
-    darkside.style.width = '100%'
-})
   
 
 //implementing dark mode
