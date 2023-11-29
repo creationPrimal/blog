@@ -86,12 +86,16 @@ body {
 }.product-profile b{
     color: var(--text-color-light);
 }
-.delivery-info input, textarea{
+.delivery-info input, textarea, .login-form input{
+    color: var(--text-color-light);
+}
+.inputdiv input{
+    transition: color 0.3s, background-color 0.3s;
     color: var(--text-color-light);
 }
 
 
-.social i, .minimize-menu i, .seemorearrow i {
+.social i, .minimize-menu i, .seemorearrow i{
     color: var(--text-color-light);
 }
 .nav-menu i{
@@ -100,6 +104,12 @@ body {
 }
 .return i{
     color: var(--text-color-light) !important;
+}
+.fillform, .category2, .posting {
+    color: var(--text-color-light);
+}
+.store-details h4{
+    color: var(--text-color-orange) !important;
 }
   
 

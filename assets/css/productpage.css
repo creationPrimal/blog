@@ -271,8 +271,22 @@
     justify-content: flex-start;
     width: 30px;
     }
+
+.second-menu{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    width: 30px;
+    align-items: center;
+    height: 40px;
+    border: none;
+    background-color: #28292c00;
+    min-width: 40px;
+    cursor: pointer;
+}
 .second-menu i{
-font-size: 30px;
+    font-size: 30px;
+    color: black;
 }
 
 
@@ -471,7 +485,7 @@ textarea{
     object-fit: cover;
 }
 .agreement span{
-    color: blue;
+    color: rgb(69, 69, 253);
 }
 
 /*cart styling*/
@@ -569,6 +583,7 @@ textarea{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-top: 7px;
         padding: 5px 10px 5px 10px;
     }
     .product-detail-head{

@@ -117,11 +117,11 @@ const secondsplide = new Splide( '#second-splide', {
     },
     390: {
       perPage: 1,
-      padding: { left: 0, right: 70 },
+      padding: { left: 0, right: 120 },
     },
-    290: {
+    335: {
       perPage: 1,
-      padding: { left: 0, right: 0 },
+      padding: { left: 0, right: 50 },
     },
     },
   } );
@@ -186,11 +186,11 @@ const thirdsplide = new Splide( '#third-splide', {
     },
     390: {
       perPage: 1,
-      padding: { left: 0, right: 70 },
+      padding: { left: 0, right: 120 },
     },
-    290: {
+    335: {
       perPage: 1,
-      padding: { left: 0, right: 0 },
+      padding: { left: 0, right: 50 },
     },
     },
   } );
@@ -255,11 +255,11 @@ const fourthsplide = new Splide( '#fourth-splide', {
     },
     390: {
       perPage: 1,
-      padding: { left: 0, right: 70 },
+      padding: { left: 0, right: 120 },
     },
-    290: {
+    335: {
       perPage: 1,
-      padding: { left: 0, right: 0 },
+      padding: { left: 0, right: 50 },
     },
     },
   } );
@@ -324,11 +324,11 @@ const fifthsplide = new Splide( '#fifth-splide', {
     },
     390: {
       perPage: 1,
-      padding: { left: 0, right: 70 },
+      padding: { left: 0, right: 120 },
     },
-    290: {
+    335: {
       perPage: 1,
-      padding: { left: 0, right: 0 },
+      padding: { left: 0, right: 50 },
     },
     },
   } );
@@ -368,4 +368,5 @@ const shoppingmainad = new Splide( '#shopping-main-ad', {
     },
   } );
   shoppingmainad.mount()
+
 

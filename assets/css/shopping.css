@@ -122,10 +122,11 @@ nav a:hover{
     margin-right: 20px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: green;
+    background-color: grey;
 }
 .searchdiv{
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px 0px 10px 30px;
@@ -146,6 +147,11 @@ nav a:hover{
 .nav-menu i{
     font-size: 35px;
     color: black;
+}
+.cart-notificationsdiv{
+    display: none;
+    position: relative;
+    flex-direction: row;
 }
 .mobile-nav-head{
     display: none;
