@@ -1,0 +1,372 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex ;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0px 50px 0px 50px;
+    background-color: rgb(255, 255, 255);
+}
+.logodiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logodiv h3{
+    margin: 0px 0px 0px 10px;
+}
+.menudiv{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 70px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+}
+.menudiv i{
+    align-self: flex-end;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.menudiv ul{
+    list-style: none;
+    text-decoration: none;
+}
+.menudiv a{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+.menudiv li{
+    margin: 20px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(228, 228, 228, 0.61);
+}
+.logo{
+    height: 40px;
+    width: auto;
+
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.navbar ul li{
+    margin-left: 40px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: green;
+}
+.menu{
+    display: none;
+}
+.menuclose{
+    display: none;
+}
+.menudiv{
+    display: none;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero .gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.178));
+    z-index: 2;
+}
+.herohead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 3;
+}
+.herohead h1{
+    margin: 0px;
+    font-size: 70px;
+    padding-left: 50px;
+}
+.herohead h3{
+    margin: 0px;
+    font-size: 30px;
+    color: rgb(41, 255, 41);
+    padding-left: 50px;
+}
+.herohead button{
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 10px 40px 10px 40px;
+    border: 0px;
+    background-color: rgb(3, 180, 3);
+    border-radius: 20px;
+}
+.herohead button:hover{
+    background-color: rgb(209, 0, 0);
+    transition: 200ms;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding-top: 0px;
+    margin: 20px 40px 30px 50px;
+}
+
+.aboutimage img:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.aboutdetails{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aboutdetails h2{
+    font-size: 30px;
+    color: green;
+    margin: 0px 0px 10px 0px;
+}
+.aboutdetails p, .aboutdetails li{
+    margin: 0px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.aboutdetails h3{
+    font-size: 25px;
+    padding-top: 60px;
+    margin: 0px 0px 6px 0px;
+}
+.aboutdetails h4{
+    font-size: 20px;
+    color: green;
+    margin: 15px 0px 6px 0px;
+}
+.aboutdetails i{
+    font-size: 13px;
+    margin-left: 10px;
+    color: goldenrod;
+}
+
+.about button{
+    align-self: center;
+    font-size: 20px;
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: green;
+    padding: 10px 50px 10px 50px;
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.servicebox{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    min-width: 350px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: grey;
+}
+.servicebox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.boxtitle{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    color: white;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0, 143, 0, 0.589);
+}
+.servicebox:hover .boxtitle{
+    height: 100%;
+    transition: 200ms all;
+    cursor: pointer;
+}
+.valuebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: AUTO;
+    width: 200px;
+    padding: 5px;
+    padding-top: 30px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    background-color: rgba(128, 128, 128, 0);
+}
+.valuesslide{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.valuebox i{
+    font-size: 20px;
+    color: goldenrod;
+}
+.valuebox p{
+    margin: 20px 0px 0px 0px;
+    line-height: 20px;
+    font-size: 13PX;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 0;
+    margin-top: 30px;
+    height: auto;
+    color: white;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(73, 73, 73);
+}
+.footbox{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.footbox p{
+    margin: 0px 0px 10px 0px;
+    font-size: 18px;
+}
+.footbox i{
+    margin-right: 10px;
+}
+.footbox a{
+    color: white;
+    text-decoration: none;
+}
+.footbox a:hover{
+    color: rgb(9, 255, 0);
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(53, 53, 53);
+}
+.copyright p{
+    margin: 0px;
+    font-size: 12px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
