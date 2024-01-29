@@ -311,7 +311,7 @@ body{
 
   /* Style for each thumbnail image */
   .thumbnail {
-    margin: 10px;
+    margin: 0px;
     cursor: pointer;
     transition: transform 0.2s;
   }
