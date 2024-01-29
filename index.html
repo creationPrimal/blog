@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--carousel cdn/icons cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,10 +75,7 @@
                 <div>
                     <h2>BARREL HAULAGE</h2>
                     <p>Is a leading logistics company that provides transport services across Africa,
-                    We are committed to providing our customers with the best possible service, and
-                    we do this by understanding their businesses and meeting their supply chain requirements.
-                    Our years of experience within logistics enable us to improve on your logistical requirements. The quality and flexibility of our shipping services are always guaranteed at 
-                    competitive solutions, underlining our commitment to quality and flexibility.
+                    We are committed to providing our customers with the best possible service.
                     </p>
                    
                 </div>
@@ -84,6 +83,34 @@
                 <a href="about.html"><button>Read More</button></a>
             </div>
         </div>
+        <section class="images gallery">
+       
+            <div class="sliderimage">
+                <img src="images/photo_10_2024-01-29_00-54-44.jpg" alt="" class="thumbnail">
+            </div>
+            <div class="sliderimage">
+                <img src="images//photo_12_2024-01-29_00-54-44.jpg" alt="" class="thumbnail">
+            </div>
+            <div class="sliderimage">
+                <img src="images/photo_14_2024-01-29_00-54-44.jpg" alt="" class="thumbnail">
+            </div>
+            <div class="sliderimage">
+                <img src="images/photo_16_2024-01-29_00-54-44.jpg" alt="" class="thumbnail">
+            </div>
+            <div class="sliderimage">
+                <img src="images/photo_18_2024-01-29_00-54-44.jpg" alt="" class="thumbnail">
+            </div>
+            <div class="sliderimage">
+                <img src="images/photo_2_2024-01-29_00-54-44.jpg" alt="" class="thumbnail">
+            </div>
+
+             <!-- Modal -->
+            <div id="myModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img src="" alt="Enlarged Image" class="modal-content">
+            </div>
+                                
+        </section>
         <!--our services-->
         <div class="services">
             <div class="servicebox">
@@ -143,7 +170,8 @@
 
 
 
-
+    <!--carousel cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="app.js"></script>
 
 </body>
